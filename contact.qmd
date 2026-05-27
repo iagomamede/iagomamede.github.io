@@ -9,9 +9,8 @@ I am happy to discuss stochastic thermodynamics, nonequilibrium statistical phys
 ## Links
 
 - Email 1: iagomamede@usp.br
-- Email 2: iagomamede9@gmail.com
-- Email 3: iago.nascimento@uhasselt.br
-- GitHub: [github.com/seuusuario](https://github.com/seuusuario)
-- Google Scholar: [profile](https://scholar.google.com/citations?user=IzlSrFEAAAAJ&hl=en)
-- ORCID: [profile](#)
-- LinkedIn: [profile](#)
+- Email 2: iago.nascimento@uhasselt.br
+- Email 3: iagomamede9@gmail.com
+- [GitHub](https://github.com/iagomamede)
+- [Google Scholar](https://scholar.google.com/citations?user=IzlSrFEAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0000-0003-2380-4012)
