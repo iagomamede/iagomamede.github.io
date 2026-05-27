@@ -6,7 +6,7 @@ title: "Iago Mamede"
 ::: {.hero-text}
 
 
-## Stochastic thermodynamics and nonequilibrium statistical physics
+## Stochastic thermodynamics
 
 I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations.
 

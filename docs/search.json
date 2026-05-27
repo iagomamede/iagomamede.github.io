@@ -102,7 +102,7 @@
     "href": "research.html#stochastic-thermodynamics",
     "title": "Research",
     "section": "Stochastic thermodynamics",
-    "text": "Stochastic thermodynamics\nI study thermodynamic quantities at the trajectory level. In this framework, heat, work and entropy production are fluctuating observables accumulated along individual realizations of a stochastic process.\nFor a Markov jump process, the entropy production rate can be written as\n\\[\n\\dot{\\Sigma}\n=\n\\sum_{i&lt;j}\nJ_{ij}\n\\ln\n\\frac{w_{ij}p_j}{w_{ji}p_i},\n\\]\nwhere (J_{ij}) is the probability current between states (i) and (j)."
+    "text": "Stochastic thermodynamics\nI study thermodynamic quantities at the trajectory level. In this framework, heat, work and entropy production are fluctuating observables accumulated along individual realizations of a stochastic process.\nFor a Markov jump process, the entropy production rate can be written as\n\\[\n\\dot{\\Sigma}\n=\n\\sum_{i&lt;j}\nJ_{ij}\n\\ln\n\\frac{w_{ij}p_j}{w_{ji}p_i},\n\\]\nwhere \\(J_{ij}\\) is the probability current between states (i) and (j)."
   },
   {
     "objectID": "research.html#nonequilibrium-spin-systems",
@@ -116,7 +116,7 @@
     "href": "research.html#large-deviations-and-rare-events",
     "title": "Research",
     "section": "Large deviations and rare events",
-    "text": "Large deviations and rare events\nRare fluctuations often dominate the behavior of nonequilibrium systems. I use large-deviation theory to characterize atypical heat, work and current fluctuations.\nThe central object is often the scaled cumulant generating function,\n\\[\n\\lambda(s)\n=\n\\lim_{t\\to\\infty}\n\\frac{1}{t}\n\\ln\n\\left\\langle\ne^{s A_t}\n\\right\\rangle,\n\\]\nwhere (A_t) is a time-integrated observable."
+    "text": "Large deviations and rare events\nRare fluctuations often dominate the behavior of nonequilibrium systems. I use large-deviation theory to characterize atypical heat, work and current fluctuations.\nThe central object is often the scaled cumulant generating function,\n\\[\n\\lambda(s)\n=\n\\lim_{t\\to\\infty}\n\\frac{1}{t}\n\\ln\n\\left\\langle\ne^{s A_t}\n\\right\\rangle,\n\\]\nwhere \\(A_t\\) is a time-integrated observable."
   },
   {
     "objectID": "research.html#brownian-systems-and-nonlinear-driving",
@@ -147,8 +147,8 @@
     "text": "I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations.\nMy research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium.\nResearch Publications CV\n\n\n\n\n\n\nHeat, work and entropy production at the level of stochastic trajectories.\n\n\n\nCollective behavior in interacting systems coupled to multiple reservoirs.\n\n\n\nRare fluctuations, tilted generators and conditioned stochastic dynamics.\n\n\n\n\n\nAt microscopic scales, thermodynamic quantities are not simply numbers assigned to macroscopic states. Heat, work and entropy production fluctuate from one trajectory to another.\nThis is the regime where stochastic thermodynamics becomes essential."
   },
   {
-    "objectID": "index.html#stochastic-thermodynamics-and-nonequilibrium-statistical-physics",
-    "href": "index.html#stochastic-thermodynamics-and-nonequilibrium-statistical-physics",
+    "objectID": "index.html#stochastic-thermodynamics",
+    "href": "index.html#stochastic-thermodynamics",
     "title": "Iago Mamede",
     "section": "",
     "text": "I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations.\nMy research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium.\nResearch Publications CV"

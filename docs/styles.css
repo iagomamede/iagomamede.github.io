@@ -1,117 +1,402 @@
-/* General */
+/* ============================================================
+   Iago Mamede — Scientific Dark Orange Mode Theme
+   Quarto website custom CSS
+   ============================================================ */
+
+/* ---------- Color system ---------- */
+
+:root {
+  --bg-main: #0d0b09;
+  --bg-secondary: #17120e;
+  --bg-card: #1d1712;
+  --bg-card-soft: rgba(29, 23, 18, 0.84);
+  --bg-code: #120e0b;
+
+  --text-main: #fff6ed;
+  --text-muted: #d7c7b8;
+  --text-soft: #aa9382;
+
+  --accent-cold: #d9893d;
+  --accent-cold-soft: #ffbf78;
+  --accent-hot: #ff6f3c;
+  --accent-hot-soft: #ff9f6e;
+
+  --border-soft: rgba(255, 183, 112, 0.13);
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.38);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.28);
+
+  --radius-small: 8px;
+  --radius-medium: 14px;
+  --radius-large: 22px;
+}
+
+/* ---------- Global layout ---------- */
 
 body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 143, 70, 0.15), transparent 34rem),
+    radial-gradient(circle at top right, rgba(255, 193, 120, 0.11), transparent 30rem),
+    var(--bg-main);
+  color: var(--text-main);
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.68;
 }
 
-/* Page width */
+/* Main content width */
 
 main {
-  max-width: 1050px;
+  max-width: 1080px;
 }
 
-/* Hero section */
+/* Text selection */
+
+::selection {
+  background: rgba(255, 143, 70, 0.38);
+  color: var(--text-main);
+}
+
+/* ---------- Typography ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 750;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--accent-cold-soft);
+  font-weight: 650;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+/* Make strong text slightly warmer */
+
+strong {
+  color: var(--text-main);
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--accent-cold-soft);
+  text-decoration: none;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+a:hover {
+  color: var(--accent-hot-soft);
+  text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  background: rgba(13, 11, 9, 0.88) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.navbar-title {
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  color: var(--text-main) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-cold-soft) !important;
+}
+
+/* ---------- Hero section ---------- */
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 10fr 1fr;
+  gap: 5.5rem;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  padding: 2.5rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-large);
+  background:
+    linear-gradient(135deg, rgba(29, 23, 18, 0.90), rgba(18, 14, 11, 0.76)),
+    radial-gradient(circle at 10% 10%, rgba(255, 143, 70, 0.15), transparent 20rem),
+    radial-gradient(circle at 85% 20%, rgba(255, 198, 120, 0.10), transparent 18rem);
+  box-shadow: var(--shadow-soft);
 }
 
 .hero h1 {
-  font-size: 3.2rem;
-  margin-bottom: 0.2rem;
+  font-size: 3.6rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.05;
 }
 
 .hero h2 {
-  font-weight: 400;
-  color: #666;
   margin-top: 0;
+  margin-bottom: 1.4rem;
+  color: var(--accent-cold-soft);
+  font-weight: 450;
+  font-size: 1.35rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 720px;
 }
 
 .hero-image img {
   width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-card);
 }
 
-/* Buttons */
+/* ---------- Buttons ---------- */
 
 .btn,
 .btn-secondary {
   display: inline-block;
-  padding: 0.65rem 1rem;
-  margin-right: 0.5rem;
+  padding: 0.72rem 1.08rem;
+  margin-right: 0.55rem;
   margin-top: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+  border-radius: 999px;
+  font-weight: 650;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease,
+    border-color 0.18s ease;
 }
 
 .btn {
-  background: #1f1f1f;
-  color: white;
+  background: linear-gradient(135deg, #ffb66e, #ff7a3d);
+  color: #160b04 !important;
+  box-shadow: 0 8px 20px rgba(255, 126, 61, 0.22);
 }
 
 .btn:hover {
-  background: #a33a2b;
-  color: white;
+  background: linear-gradient(135deg, #ff8f4f, #d94d24);
+  color: #170804 !important;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  border: 1px solid #1f1f1f;
-  color: #1f1f1f;
+  border: 1px solid rgba(255, 183, 112, 0.48);
+  color: var(--accent-cold-soft) !important;
+  background: rgba(255, 143, 70, 0.07);
 }
 
 .btn-secondary:hover {
-  background: #1f1f1f;
-  color: white;
+  border-color: var(--accent-hot-soft);
+  color: var(--accent-hot-soft) !important;
+  background: rgba(255, 111, 60, 0.10);
+  transform: translateY(-1px);
 }
 
-/* Cards */
+/* ---------- Cards ---------- */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-  margin: 2rem 0;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0 3rem 0;
+  max-width: 720px;
 }
 
 .card {
-  padding: 1.4rem;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  background: rgba(255,255,255,0.7);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  padding: 1.5rem 1.8rem;
+  border-radius: var(--radius-medium);
+  border: 1px solid var(--border-soft);
+  background:
+    linear-gradient(180deg, rgba(31, 24, 18, 0.94), rgba(22, 17, 13, 0.94));
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .card h3 {
   margin-top: 0;
-  color: #a33a2b;
+  margin-bottom: 0.6rem;
+  color: var(--accent-cold-soft);
+  font-size: 1.35rem;
 }
 
-/* Links */
-
-a {
-  text-decoration: none;
+.card p {
+  margin-bottom: 0;
+  color: var(--text-muted);
+  max-width: 620px;
 }
 
-/* Mobile */
+/* ---------- Callouts ---------- */
 
-@media (max-width: 800px) {
+.callout {
+  border-radius: var(--radius-medium);
+  background: rgba(31, 24, 18, 0.86);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.callout-note {
+  border-left-color: var(--accent-cold) !important;
+}
+
+.callout-warning {
+  border-left-color: var(--accent-hot) !important;
+}
+
+/* ---------- Code blocks ---------- */
+
+pre,
+code {
+  background-color: var(--bg-code) !important;
+  color: #f0dfcf;
+  border-radius: var(--radius-small);
+}
+
+pre {
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-card);
+}
+
+/* Inline code */
+
+p code,
+li code {
+  color: var(--accent-hot-soft);
+  background: rgba(255, 111, 60, 0.12) !important;
+  padding: 0.12rem 0.28rem;
+  border-radius: 5px;
+}
+
+/* ---------- Math / equations ---------- */
+
+.math.display,
+span.math.display,
+div.math.display {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+mjx-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+mjx-container[display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  border-color: var(--border-soft);
+}
+
+thead {
+  background: rgba(255, 143, 70, 0.09);
+}
+
+tbody tr:hover {
+  background: rgba(255, 183, 112, 0.04);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  border-top: 1px solid var(--border-soft);
+  color: var(--text-soft);
+}
+
+.nav-footer {
+  background: transparent;
+}
+
+/* ---------- Table of contents ---------- */
+
+#TOC {
+  border-left: 1px solid var(--border-soft);
+}
+
+#TOC a {
+  color: var(--text-soft);
+}
+
+#TOC a:hover {
+  color: var(--accent-cold-soft);
+}
+
+/* ---------- Images ---------- */
+
+img {
+  border-radius: var(--radius-small);
+}
+
+.figure-img {
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-card);
+}
+
+/* ---------- Horizontal rule ---------- */
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border-soft);
+  margin: 2.5rem 0;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 850px) {
+  body {
+    font-size: 16px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero h2 {
+    font-size: 1.15rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 2.4rem;
   }
 }

@@ -20,7 +20,7 @@ J_{ij}
 \frac{w_{ij}p_j}{w_{ji}p_i},
 $$
 
-where \(J_{ij}\) is the probability current between states \(i\) and \(j\).
+where $J_{ij}$ is the probability current between states \(i\) and \(j\).
 
 ## Nonequilibrium spin systems
 
@@ -43,7 +43,7 @@ e^{s A_t}
 \right\rangle,
 $$
 
-where \(A_t\) is a time-integrated observable.
+where $A_t$ is a time-integrated observable.
 
 ## Brownian systems and nonlinear driving
 
