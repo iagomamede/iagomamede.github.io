@@ -6,8 +6,112 @@ title: "Publications"
 ## Published articles
 
 ::: {.card}
+### Rare events of small-noise Doob conditioned processes
+
+Iago N. Mamede and Francesco Coghi
+
+[arXiv](https://arxiv.org/pdf/2605.24537)
+
+Doob fixed-time conditioning enables the sampling of rare trajectories of Markov processes by
+modifying the drift so that reaching a prescribed target at a given time is guaranteed. We study the
+statistics of this conditioned path ensemble through the moment generating function in the weaknoise large deviation regime. Since the Doob drift is rarely available in closed form, we reinterpret
+the conditioned ensemble as the original process post-selected on the terminal constraint, thereby
+avoiding explicit construction of the Doob transform. This viewpoint then yields an optimal-control
+representation for the leading exponential contribution to the generating function, expressed as a
+variational principle with terminal boundary conditions set by the Doob end-point constraint. We
+illustrate the framework with two analytical examples and with an application to heat dissipation
+of a minimal model of biomolecular folding.
+:::
+---
+
+
+::: {.card}
+### Universal features of nonequilibrium Ising models in contact with two thermal reservoirs
+
+Iago N. Mamede, Bart Cleuren and C.E. Fiore
+
+[arXiv](https://arxiv.org/pdf/2604.01926)
+
+We derive generic properties of nonequilibrium phase transitions in all-to-all Ising models placed
+in contact with two thermal reservoirs, in which parameters (temperatures, interactions and field parameters)
+assume arbitrary values depending on the contact with each thermal bath. The presence of different kinds of
+external parameters leads to remarkably different sort of phase transitions. While continuous, discontinuous
+and even tricritical points are presented when external parameters are symmetric (e.g. the case of energetic
+barriers or different couplings between the system and thermal baths), the tricriticality is absent when external
+parameters are antisymmetric (e.g. the case of magnetic fields or biased drivings) implying that solely critical
+or discontinuous are possible. In such latter case, the probability distribution acquires the Boltzmann-Gibbs
+like form, irrespectively the model parameters when the switching between thermal reservoirs is sufficiently
+fast. Our work sheds light about the differences between equilibrium and nonequilibrium ingredients and
+theirs consequences upon phase transitions.
+:::
+---
+
+
+
+
+
+::: {.card}
+### Collective heat engines via different interactions: Minimal models, thermodynamics, and phase transitions
+
+Iago N. Mamede, Vitória T. Henkes and C.E. Fiore
+
+Phys. Rev. E 113, 054118 – Published 11 May, 2026
+
+[DOI](https://doi.org/10.1103/f371-6ck6) | [arXiv](https://arxiv.org/pdf/2508.06438) 
+
+We investigate the dynamics and thermodynamics of a framework composed of interacting units in which
+parameters (temperatures and energies) assume distinct values due to the contact with distinct (cold and hot)
+thermal reservoirs. The influence of different ingredients, such as the contact between thermal baths (simultaneous versus not simultaneous contact), the coupling between them (equal or different couplings) and the
+topology of interactions (all-to-all and local interactions) is investigated. Closed expressions for transition lines
+have been obtained, expressed by a linear combination of interaction energies times reciprocal temperatures for
+the simultaneous thermal contact baths and deviates from it when the contact is not simultaneous. The interplay
+between performance and dissipation is investigated under different conditions, giving rise to a richness of operation regimes, such as heat-engine and heat pump. The relationship between thermodynamic quantities (power,
+efficiency and dissipation) allows a careful choice of parameters to ensure the desirable compromise between
+them. Finally, the influence of different interactions energies (Ising, Potts versus Blume-Emery-Griffiths (BEG)
+like) are investigated, revealing that Potts interactions in general present superior performances than BEG ones.
+:::
+---
+
+::: {.card}
+### Steady-state heat engines driven by finite reservoirs
+
+Iago N. Mamede, Saulo V. Moreira, Mark T. Mitchison and C.E. Fiore
+
+Phys. Rev. E 113, 014115 – Published 13 January, 2026
+
+[DOI](https://doi.org/10.1103/hwj9-q7hf) | [arXiv](https://arxiv.org/pdf/2505.05174) 
+
+We provide a consistent thermodynamic analysis of stochastic thermal engines driven by finite-size reservoirs, which are in turn coupled to infinite-size reservoirs. We consider a cyclic operation mode, where the
+working medium couples sequentially to hot and cold reservoirs, and a continuous mode with both reservoirs
+coupled simultaneously. We derive an effective temperature for the finite-size reservoirs determining the entropy production for two-state engines in the sequential coupling scenario, and show that finite-size reservoirs
+can meaningfully affect the power when compared to infinite-size reservoirs in both sequential and simultaneous
+coupling scenarios. We also investigate a three-state engine comprising two interacting units and optimize its
+performance in the presence of a finite reservoir. Notably, we show that the efficiency at maximum power can
+exceed the Curzon-Ahlborn bound with finite reservoirs. Our work introduces tools to optimize the performance
+of nanoscale engines under realistic conditions of finite reservoir heat capacity and imperfect thermal isolation.
+:::
+---
+
+::: {.card}
+### Exact Mapping of Nonequilibrium to Equilibrium Phase Transitions for Systems in Contact with Two Thermal Baths
+
+Iago N. Mamede, Carlos E. Fiore, Gustavo A. L. Forão, Karel Proesmans, André P. Vieira
+
+[arXiv](https://arxiv.org/pdf/2511.02127) 
+
+We show that a large class of nonequilibrium many-body systems in contact with two thermal baths admit
+an exact mapping onto equivalent equilibrium systems. This mapping provides direct access to nonequilibrium
+phase transition points from known equilibrium results, irrespective of the model, interaction topology, or distance from equilibrium. We verify the universality of this correspondence using paradigmatic models (Ising,
+Potts, and Blume-Capel), and highlight distinctive features in entropy production close to critical and tricritical points. Our findings connect equilibrium and nonequilibrium statistical mechanics, with implications for
+microscopic thermal machines and stochastic thermodynamics.
+:::
+---
+
+
+::: {.card}
 ### Work statistics at first-passage times   
 Iago N Mamede, Prashant Singh, Arnab Pal, C.E. Fiore and Karel Proesmans
+
 New Journal of Physics, Volume 26, March 2024
 
 [DOI](10.1088/1367-2630/ad313d) | [arXiv](https://arxiv.org/pdf/2308.02255) 
@@ -21,6 +125,7 @@ We investigate the work fluctuations in an overdamped non-equilibrium process th
 ::: {.card}
 ### Thermodynamics of interacting systems: The role of the topology and collective effects   
 Iago Mamede, Karel Proesmans and C.E. Fiore  
+
 Phys. Rev. Research 5, 043278 – Published 22 December, 2023
 
 [DOI](https://doi.org/10.1103/PhysRevResearch.5.043278) | [arXiv](https://arxiv.org/pdf/2308.02255) 
@@ -41,7 +146,8 @@ energies increases and results are well described by a system with all-to-all in
 
 ::: {.card}
 ### Obtaining efficient collisional engines via velocity-dependent drivings   
-Iago Mamede, Angel L. L. Stable and C.E. Fiore  
+Iago Mamede, Angel L. L. Stable and C.E. Fiore 
+
 Phys. Rev. E 106, 064125 – Published 19 December, 2022
 
 [DOI](https://doi.org/10.1103/PhysRevE.106.064125) | [arXiv](https://arxiv.org/pdf/2209.01132) 
@@ -63,5 +169,14 @@ We introduce an alternative route for obtaining reliable cyclic engines, based o
 :::
 ---
 
+## Msc Thesis
 
 
+::: {.card}
+### Termodinâmica estocástica de máquinas coletivas e tempos de primeira passagem
+
+Iago Nascimento Mamede
+
+[PDF](https://teses.usp.br/teses/disponiveis/43/43134/tde-27022025-114143/publico/Tese_Iago_Versao_Final_Alterado.pdf)
+:::
+---
