@@ -14,6 +14,7 @@ My research combines stochastic thermodynamics, interacting spin models, Brownia
 
 [About](about.qmd){.btn}
 [Research](research.qmd){.btn}
+[Notes](notes.qmd){.btn}
 [Publications](publications.qmd){.btn}
 [Contact](contact.qmd){.btn}
 
