@@ -8,6 +8,8 @@ title: "Publications"
 ::: {.card}
 ### Rare events of small-noise Doob conditioned processes
 
+May 2026
+
 Iago N. Mamede and Francesco Coghi
 
 [arXiv](https://arxiv.org/pdf/2605.24537)
@@ -27,6 +29,8 @@ of a minimal model of biomolecular folding.
 
 ::: {.card}
 ### Universal features of nonequilibrium Ising models in contact with two thermal reservoirs
+
+April 2026
 
 Iago N. Mamede, Bart Cleuren and C.E. Fiore
 
