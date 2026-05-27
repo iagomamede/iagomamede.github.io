@@ -3,17 +3,12 @@ title: "Iago Mamede"
 ---
 
 ::: {.hero}
-::: {.hero-text}
-
-
 ## Stochastic thermodynamics
 
 I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations.
-
 My research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium.
+:::
 
-:::
-:::
 
 
 

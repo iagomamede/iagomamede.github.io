@@ -171,10 +171,9 @@ Phys. Rev. E 105, 024106 – Published 4 February, 2022
 
 We introduce an alternative route for obtaining reliable cyclic engines, based on two interacting Brownian particles under time-periodic drivings which can be used as a work-to-work converter or a heat engine. Exact expressions for the thermodynamic fluxes, such as power and heat, are obtained using the framework of stochastic thermodynamic. We then use these exact expression to optimize the driving protocols with respect to output forces, their phase difference. For the work-to-work engine, they are solely expressed in terms of Onsager coefficients and their derivatives, whereas nonlinear effects start to play a role since the particles are at different temperatures. Our results suggest that stronger coupling generally leads to better performance, but careful design is needed to optimize the external forces.
 :::
----
+
 
 ## Msc Thesis
-
 
 ::: {.card}
 ### Termodinâmica estocástica de máquinas coletivas e tempos de primeira passagem
@@ -183,4 +182,4 @@ Iago Nascimento Mamede
 
 [PDF](https://teses.usp.br/teses/disponiveis/43/43134/tde-27022025-114143/publico/Tese_Iago_Versao_Final_Alterado.pdf)
 :::
----
+
