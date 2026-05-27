@@ -2,7 +2,6 @@
 title: "Publications"
 ---
 
-# Publications
 
 ## Published articles
 
@@ -24,10 +23,3 @@ Iago Mamede, Coauthors
 *Journal*, volume, page, year.  
 [DOI](#) | [arXiv](#) | [BibTeX](#)
 
-## Preprints
-
-Coming soon.
-
-## Manuscripts in preparation
-
-Coming soon.
