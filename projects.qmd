@@ -1,0 +1,21 @@
+---
+title: "Projects"
+---
+
+
+
+## Collective stochastic heat engines
+
+Microscopic engines operate in a regime where fluctuations are unavoidable. In this project, I investigate how interactions between many microscopic degrees of freedom modify heat currents, power output and efficiency.
+
+## Nonequilibrium Ising and Potts systems
+
+I use interacting spin models coupled to multiple reservoirs to study phase transitions, stationary distributions and thermodynamic currents far from equilibrium.
+
+## Large deviations of heat fluctuations
+
+I study rare heat fluctuations using variational methods, stochastic calculus and large-deviation theory.
+
+## Brownian machines under nonlinear driving
+
+I model Brownian particles driven by nonlinear time-dependent forces to understand power, heat and irreversibility.

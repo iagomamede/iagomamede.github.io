@@ -1,0 +1,50 @@
+---
+title: "Research"
+---
+
+
+My research is centered on stochastic thermodynamics: the theory of heat, work and entropy production in systems where thermal fluctuations are not negligible.
+
+## Stochastic thermodynamics
+
+I study thermodynamic quantities at the trajectory level. In this framework, heat, work and entropy production are fluctuating observables accumulated along individual realizations of a stochastic process.
+
+For a Markov jump process, the entropy production rate can be written as
+
+$$
+\dot{\Sigma}
+=
+\sum_{i<j}
+J_{ij}
+\ln
+\frac{w_{ij}p_j}{w_{ji}p_i},
+$$
+
+where \(J_{ij}\) is the probability current between states \(i\) and \(j\).
+
+## Nonequilibrium spin systems
+
+A major part of my work concerns interacting spin systems coupled to multiple thermal reservoirs. These models provide minimal platforms to study how collective effects, phase transitions and thermodynamic performance emerge in nonequilibrium heat engines.
+
+## Large deviations and rare events
+
+Rare fluctuations often dominate the behavior of nonequilibrium systems. I use large-deviation theory to characterize atypical heat, work and current fluctuations.
+
+The central object is often the scaled cumulant generating function,
+
+$$
+\lambda(s)
+=
+\lim_{t\to\infty}
+\frac{1}{t}
+\ln
+\left\langle
+e^{s A_t}
+\right\rangle,
+$$
+
+where \(A_t\) is a time-integrated observable.
+
+## Brownian systems and nonlinear driving
+
+I also investigate Brownian systems under nonlinear forces and time-dependent protocols, focusing on heat flows, power output and entropy production.

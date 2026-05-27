@@ -1,0 +1,33 @@
+---
+title: "Publications"
+---
+
+# Publications
+
+## Published articles
+
+### Stochastic thermal machines and interacting systems
+
+**Title of the paper**  
+Iago Mamede, Coauthors  
+*Journal*, volume, page, year.  
+[DOI](#) | [arXiv](#) | [BibTeX](#)
+
+Short description: In this work, we investigated how interactions modify the thermodynamic performance of stochastic thermal machines.
+
+---
+
+### Nonequilibrium phase transitions
+
+**Title of the paper**  
+Iago Mamede, Coauthors  
+*Journal*, volume, page, year.  
+[DOI](#) | [arXiv](#) | [BibTeX](#)
+
+## Preprints
+
+Coming soon.
+
+## Manuscripts in preparation
+
+Coming soon.

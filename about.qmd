@@ -1,0 +1,21 @@
+---
+title: "About"
+---
+
+
+I am a physicist working on stochastic thermodynamics and nonequilibrium statistical physics.
+
+My research focuses on microscopic systems where fluctuations are essential, such as stochastic heat engines, interacting spin models and Brownian systems.
+
+I am particularly interested in how heat, work and entropy production emerge at the trajectory level, and how collective effects and rare fluctuations shape the behavior of systems far from equilibrium.
+
+## Research interests
+
+- Stochastic thermodynamics
+- Nonequilibrium statistical mechanics
+- Interacting spin systems
+- Stochastic heat engines
+- Large-deviation theory
+- Brownian dynamics
+- Entropy production
+- Optimal paths and rare events
