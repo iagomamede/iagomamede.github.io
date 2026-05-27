@@ -61,8 +61,9 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--text-main);
+  color: var(--accent-hot);
   letter-spacing: -0.02em;
+  font-size: 100rem;
 }
 
 h1 {
@@ -76,7 +77,6 @@ h2 {
 }
 
 h3 {
-  color: var(--accent-cold-soft);
   font-weight: 650;
 }
 

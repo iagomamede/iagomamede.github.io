@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Iago Mamede"
+  title: ""
   navbar:
-    title: "Iago Mamede"
+    title: ""
     left:
       - text: "About"
         href: about.qmd
@@ -21,15 +21,12 @@ website:
         href: contact.qmd
     right:
       - icon: github
-        href: https://github.com/SEUUSUARIO
-      - icon: linkedin
-        href: https://www.linkedin.com/in/SEUPERFIL
+        href: https://github.com/iagomamede
       - text: "Google Scholar"
-        href: "#"
+        href: "https://scholar.google.com/citations?user=IzlSrFEAAAAJ&hl=en"
 
-  page-footer:
-    left: "© 2026 Iago Mamede"
-    right: "Built with Quarto"
+  # page-footer:
+  #   left: "Iago Mamede"
 
 format:
   html:

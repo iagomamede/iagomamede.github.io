@@ -12,9 +12,10 @@ I study how microscopic systems exchange heat, perform work and produce entropy 
 
 My research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium.
 
+[About](about.qmd){.btn}
 [Research](research.qmd){.btn}
 [Publications](publications.qmd){.btn}
-[CV](cv.qmd){.btn}
+[Contact](contact.qmd){.btn}
 
 
 
