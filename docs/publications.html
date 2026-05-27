@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -255,6 +284,10 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -312,8 +345,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#published-articles" id="toc-published-articles" class="nav-link active" data-scroll-target="#published-articles">Published articles</a>
   <ul class="collapse">
-  <li><a href="#stochastic-thermal-machines-and-interacting-systems" id="toc-stochastic-thermal-machines-and-interacting-systems" class="nav-link" data-scroll-target="#stochastic-thermal-machines-and-interacting-systems">Stochastic thermal machines and interacting systems</a></li>
-  <li><a href="#nonequilibrium-phase-transitions" id="toc-nonequilibrium-phase-transitions" class="nav-link" data-scroll-target="#nonequilibrium-phase-transitions">Nonequilibrium phase transitions</a></li>
+  <li><a href="#work-statistics-at-first-passage-times" id="toc-work-statistics-at-first-passage-times" class="nav-link" data-scroll-target="#work-statistics-at-first-passage-times">Work statistics at first-passage times</a></li>
+  <li><a href="#thermodynamics-of-interacting-systems-the-role-of-the-topology-and-collective-effects" id="toc-thermodynamics-of-interacting-systems-the-role-of-the-topology-and-collective-effects" class="nav-link" data-scroll-target="#thermodynamics-of-interacting-systems-the-role-of-the-topology-and-collective-effects">Thermodynamics of interacting systems: The role of the topology and collective effects</a></li>
+  <li><a href="#obtaining-efficient-collisional-engines-via-velocity-dependent-drivings" id="toc-obtaining-efficient-collisional-engines-via-velocity-dependent-drivings" class="nav-link" data-scroll-target="#obtaining-efficient-collisional-engines-via-velocity-dependent-drivings">Obtaining efficient collisional engines via velocity-dependent drivings</a></li>
+  <li><a href="#obtaining-efficient-thermal-engines-from-interacting-brownian-particles-under-time-periodic-drivings" id="toc-obtaining-efficient-thermal-engines-from-interacting-brownian-particles-under-time-periodic-drivings" class="nav-link" data-scroll-target="#obtaining-efficient-thermal-engines-from-interacting-brownian-particles-under-time-periodic-drivings">Obtaining efficient thermal engines from interacting Brownian particles under time-periodic drivings</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -343,24 +378,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="published-articles" class="level2">
 <h2 class="anchored" data-anchor-id="published-articles">Published articles</h2>
-<section id="stochastic-thermal-machines-and-interacting-systems" class="level3">
-<h3 class="anchored" data-anchor-id="stochastic-thermal-machines-and-interacting-systems">Stochastic thermal machines and interacting systems</h3>
-<p><strong>Title of the paper</strong><br>
-Iago Mamede, Coauthors<br>
-<em>Journal</em>, volume, page, year.<br>
-<a href="#">DOI</a> | <a href="#">arXiv</a> | <a href="#">BibTeX</a></p>
-<p>Short description: In this work, we investigated how interactions modify the thermodynamic performance of stochastic thermal machines.</p>
+<section id="work-statistics-at-first-passage-times" class="level3 card">
+<h3 class="anchored" data-anchor-id="work-statistics-at-first-passage-times">Work statistics at first-passage times</h3>
+<p>Iago N Mamede, Prashant Singh, Arnab Pal, C.E. Fiore and Karel Proesmans New Journal of Physics, Volume 26, March 2024</p>
+<p><a href="10.1088/1367-2630/ad313d">DOI</a> | <a href="https://arxiv.org/pdf/2308.02255">arXiv</a></p>
+<p>We investigate the work fluctuations in an overdamped non-equilibrium process that is stopped at a stochastic time. The latter is characterized by a first passage event that marks the completion of the non-equilibrium process. In particular, we consider a particle diffusing in one dimension in the presence of a time-dependent potential <span class="math inline">\(U(x,t)=k|x−vt|n/n\)</span>, where <span class="math inline">\(k&gt;0\)</span> is the stiffness and <span class="math inline">\(n&gt;0\)</span> is the order of the potential. Moreover, the particle is confined between two absorbing walls, located at <span class="math inline">\(L\pm(t)\)</span>, that move with a constant velocity <span class="math inline">\(v\)</span> and are initially located at <span class="math inline">\(L\pm(0)=\pm L\)</span>. As soon as the particle reaches any of the boundaries, the process is said to be completed and here, we compute the work done W by the particle in the modulated trap upto this random time. Employing the Feynman-Kac path integral approach, we find that the typical values of the work scale with <span class="math inline">\(L\)</span> with a crucial dependence on the order <span class="math inline">\(n\)</span>. While for <span class="math inline">\(n&gt;1\)</span>, we show that <span class="math inline">\(\langle{W}\rangle \sim L^{1-n}~\exp \left[ \left( {k L^{n}}/{n}-v L \right)/D \right]\)</span> for large <span class="math inline">\(L\)</span>, we get an algebraic scaling of the form <span class="math inline">\(\langle{W}\rangle \sim L^n\)</span> for the <span class="math inline">\(n&lt;1\)</span> case. The marginal case of <span class="math inline">\(n=1\)</span> is exactly solvable and our analysis unravels three distinct scaling behaviours: (i) <span class="math inline">\(\rangle{W}\langle \sim L\)</span> for <span class="math inline">\(v&gt;k\)</span>, (ii) <span class="math inline">\(\langle{W}\rangle \sim L^2\)</span> for <span class="math inline">\(v=k\)</span> and (iii) <span class="math inline">\(\langle{W}\rangle \sim \exp\left[{-(v-k)L}\right]\)</span> for <span class="math inline">\(v&lt;k\)</span>. For all cases, we also obtain the probability distribution associated with the typical values of <span class="math inline">\(W\)</span>. Finally, we observe an interesting set of relations between the relative fluctuations of the work done and the first-passage time for different <span class="math inline">\(n\)</span> – which we argue physically. Our results are well supported by the numerical simulations.</p>
+</section>
 <hr>
+<section id="thermodynamics-of-interacting-systems-the-role-of-the-topology-and-collective-effects" class="level3 card">
+<h3 class="anchored" data-anchor-id="thermodynamics-of-interacting-systems-the-role-of-the-topology-and-collective-effects">Thermodynamics of interacting systems: The role of the topology and collective effects</h3>
+<p>Iago Mamede, Karel Proesmans and C.E. Fiore<br>
+Phys. Rev.&nbsp;Research 5, 043278 – Published 22 December, 2023</p>
+<p><a href="https://doi.org/10.1103/PhysRevResearch.5.043278">DOI</a> | <a href="https://arxiv.org/pdf/2308.02255">arXiv</a></p>
+<p>We study a class of system composed of interacting unicyclic machines placed in contact with a hot and cold thermal baths subjected to a nonconservative driving worksource. Despite their simplicity, these models showcase an intricate array of phenomena, including pump and heat engine regimes as well as a discontinuous phase transition. We look at three distinctive topologies: a minimal and beyond minimal (homogeneous and heterogeneous interaction structures). The former case is represented by stark different networks (“all-to-all” interactions and only a central interacting to its neighbors) and present exact solutions, whereas homogeneous and heterogeneous structures have been analyzed by numerical simulations. We find that the topology plays a major role on the thermodynamic performance for smaller values of individual energies, in part due to the presence of first-order phase transitions. Contrariwise, the topology becomes less important as individual energies increases and results are well described by a system with all-to-all interactions.</p>
 </section>
-<section id="nonequilibrium-phase-transitions" class="level3">
-<h3 class="anchored" data-anchor-id="nonequilibrium-phase-transitions">Nonequilibrium phase transitions</h3>
-<p><strong>Title of the paper</strong><br>
-Iago Mamede, Coauthors<br>
-<em>Journal</em>, volume, page, year.<br>
-<a href="#">DOI</a> | <a href="#">arXiv</a> | <a href="#">BibTeX</a></p>
+<hr>
+<section id="obtaining-efficient-collisional-engines-via-velocity-dependent-drivings" class="level3 card">
+<h3 class="anchored" data-anchor-id="obtaining-efficient-collisional-engines-via-velocity-dependent-drivings">Obtaining efficient collisional engines via velocity-dependent drivings</h3>
+<p>Iago Mamede, Angel L. L. Stable and C.E. Fiore<br>
+Phys. Rev.&nbsp;E 106, 064125 – Published 19 December, 2022</p>
+<p><a href="https://doi.org/10.1103/PhysRevE.106.064125">DOI</a> | <a href="https://arxiv.org/pdf/2209.01132">arXiv</a></p>
+<p>Brownian particles interacting sequentially with distinct temperatures and driving forces at each stroke have been tackled as a reliable alternative for the construction of engine setups. However, they can behave very inefficiently depending on the driving used for the work source and/or when temperatures of each stage are very different from each other. Inspired by some models for molecular motors and recent experimental studies, a coupling between driving and velocities is introduced and detail investigated from stochastic thermodynamics. Exact expressions for thermodynamic quantities and distinct maximization routes have been obtained. The search of an optimal coupling provides a substantial increase of engine performance (mainly efficiency), even for large <span class="math inline">\(\Delta T\)</span> . A simple and general argument for the optimal coupling can be estimated, irrespective of the driving and other model details.</p>
+</section>
+<hr>
+<section id="obtaining-efficient-thermal-engines-from-interacting-brownian-particles-under-time-periodic-drivings" class="level3 card">
+<h3 class="anchored" data-anchor-id="obtaining-efficient-thermal-engines-from-interacting-brownian-particles-under-time-periodic-drivings">Obtaining efficient thermal engines from interacting Brownian particles under time-periodic drivings</h3>
+<p>Iago Mamede, Pedro E. Harunari, Bruno A. N. Akasaki, Karel Proesmans and C.E. Fiore<br>
+Phys. Rev.&nbsp;E 105, 024106 – Published 4 February, 2022</p>
+<p><a href="https://doi.org/10.1103/PhysRevE.105.024106">DOI</a> | <a href="https://arxiv.org/pdf/2110.09235">arXiv</a></p>
+<p>We introduce an alternative route for obtaining reliable cyclic engines, based on two interacting Brownian particles under time-periodic drivings which can be used as a work-to-work converter or a heat engine. Exact expressions for the thermodynamic fluxes, such as power and heat, are obtained using the framework of stochastic thermodynamic. We then use these exact expression to optimize the driving protocols with respect to output forces, their phase difference. For the work-to-work engine, they are solely expressed in terms of Onsager coefficients and their derivatives, whereas nonlinear effects start to play a role since the particles are at different temperatures. Our results suggest that stronger coupling generally leads to better performance, but careful design is needed to optimize the external forces.</p>
+</section>
+<hr>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

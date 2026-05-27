@@ -5,21 +5,63 @@ title: "Publications"
 
 ## Published articles
 
-### Stochastic thermal machines and interacting systems
+::: {.card}
+### Work statistics at first-passage times   
+Iago N Mamede, Prashant Singh, Arnab Pal, C.E. Fiore and Karel Proesmans
+New Journal of Physics, Volume 26, March 2024
 
-**Title of the paper**  
-Iago Mamede, Coauthors  
-*Journal*, volume, page, year.  
-[DOI](#) | [arXiv](#) | [BibTeX](#)
+[DOI](10.1088/1367-2630/ad313d) | [arXiv](https://arxiv.org/pdf/2308.02255) 
 
-Short description: In this work, we investigated how interactions modify the thermodynamic performance of stochastic thermal machines.
-
+We investigate the work fluctuations in an overdamped non-equilibrium process that is stopped at a stochastic time. The latter is characterized by a first passage event that marks the completion of the non-equilibrium process. In particular, we consider a particle diffusing in one dimension in the presence of a time-dependent potential $U(x,t)=k|x−vt|n/n$, where $k>0$ is the stiffness and $n>0$ is the order of the potential. Moreover, the particle is confined between two absorbing walls, located at $L\pm(t)$, that move with a constant velocity $v$ and are initially located at $L\pm(0)=\pm L$. As soon as the particle reaches any of the boundaries, the process is said to be completed and here, we compute the work done W by the particle in the modulated trap upto this random time. Employing the Feynman-Kac path integral approach, we find that the typical values of the work scale with $L$ with a crucial dependence on the order $n$. While for $n>1$, we show that $\langle{W}\rangle \sim L^{1-n}~\exp \left[ \left( {k L^{n}}/{n}-v L \right)/D \right]$ for large $L$, we get an algebraic scaling of the form $\langle{W}\rangle \sim L^n$ for the $n<1$ case. The marginal case of $n=1$ is exactly solvable and our analysis unravels three distinct scaling behaviours: (i) $\rangle{W}\langle \sim L$ for $v>k$, (ii) $\langle{W}\rangle \sim L^2$ for $v=k$ and (iii) $\langle{W}\rangle \sim \exp\left[{-(v-k)L}\right]$ for $v<k$. For all cases, we also obtain the probability distribution associated with the typical values of $W$. Finally, we observe an interesting set of relations between the relative fluctuations of the work done and the first-passage time for different $n$ -- which we argue physically. Our results are well supported by the numerical simulations.
+:::
 ---
 
-### Nonequilibrium phase transitions
 
-**Title of the paper**  
-Iago Mamede, Coauthors  
-*Journal*, volume, page, year.  
-[DOI](#) | [arXiv](#) | [BibTeX](#)
+
+::: {.card}
+### Thermodynamics of interacting systems: The role of the topology and collective effects   
+Iago Mamede, Karel Proesmans and C.E. Fiore  
+Phys. Rev. Research 5, 043278 – Published 22 December, 2023
+
+[DOI](https://doi.org/10.1103/PhysRevResearch.5.043278) | [arXiv](https://arxiv.org/pdf/2308.02255) 
+
+We study a class of system composed of interacting unicyclic machines placed in contact with a hot and
+cold thermal baths subjected to a nonconservative driving worksource. Despite their simplicity, these models
+showcase an intricate array of phenomena, including pump and heat engine regimes as well as a discontinuous
+phase transition. We look at three distinctive topologies: a minimal and beyond minimal (homogeneous and
+heterogeneous interaction structures). The former case is represented by stark different networks (“all-to-all”
+interactions and only a central interacting to its neighbors) and present exact solutions, whereas homogeneous
+and heterogeneous structures have been analyzed by numerical simulations. We find that the topology plays
+a major role on the thermodynamic performance for smaller values of individual energies, in part due to
+the presence of first-order phase transitions. Contrariwise, the topology becomes less important as individual
+energies increases and results are well described by a system with all-to-all interactions.
+:::
+---
+
+
+::: {.card}
+### Obtaining efficient collisional engines via velocity-dependent drivings   
+Iago Mamede, Angel L. L. Stable and C.E. Fiore  
+Phys. Rev. E 106, 064125 – Published 19 December, 2022
+
+[DOI](https://doi.org/10.1103/PhysRevE.106.064125) | [arXiv](https://arxiv.org/pdf/2209.01132) 
+
+Brownian particles interacting sequentially with distinct temperatures and driving forces at each stroke have been tackled as a reliable alternative for the construction of engine setups. However, they can behave very inefficiently depending on the driving used for the work source and/or when temperatures of each stage are very different from each other. Inspired by some models for molecular motors and recent experimental studies, a coupling between driving and velocities is introduced and detail investigated from stochastic thermodynamics. Exact expressions for thermodynamic quantities and distinct maximization routes have been obtained. The search of an optimal coupling provides a substantial increase of engine performance (mainly efficiency), even for large $\Delta T$ . A simple and general argument for the optimal coupling can be estimated, irrespective of the driving and other model details.
+:::
+---
+
+
+
+::: {.card}
+### Obtaining efficient thermal engines from interacting Brownian particles under time-periodic drivings   
+Iago Mamede, Pedro E. Harunari, Bruno A. N. Akasaki, Karel Proesmans and C.E. Fiore  
+Phys. Rev. E 105, 024106 – Published 4 February, 2022
+
+[DOI](https://doi.org/10.1103/PhysRevE.105.024106) | [arXiv](https://arxiv.org/pdf/2110.09235) 
+
+We introduce an alternative route for obtaining reliable cyclic engines, based on two interacting Brownian particles under time-periodic drivings which can be used as a work-to-work converter or a heat engine. Exact expressions for the thermodynamic fluxes, such as power and heat, are obtained using the framework of stochastic thermodynamic. We then use these exact expression to optimize the driving protocols with respect to output forces, their phase difference. For the work-to-work engine, they are solely expressed in terms of Onsager coefficients and their derivatives, whereas nonlinear effects start to play a role since the particles are at different temperatures. Our results suggest that stronger coupling generally leads to better performance, but careful design is needed to optimize the external forces.
+:::
+---
+
+
 
