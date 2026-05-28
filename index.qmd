@@ -3,41 +3,23 @@ title: "Iago Mamede"
 ---
 
 ::: {.hero}
-## Stochastic thermodynamics
+## About me
 
-I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations.
-My research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium.
+I am a PhD student in Physics at the Universidade de São Paulo (Brazil), conducting part of my doctoral research at Hasselt University (Belgium) through the BOF-BILA program.
+
+My research lies at the interface of stochastic thermodynamics, nonequilibrium statistical physics and statistical mechanics of interacting systems. I study how microscopic systems exchange heat, perform work and produce entropy when thermal fluctuations, collective effects and rare events play a central role.
+
+I am particularly interested in stochastic heat engines, nonequilibrium phase transitions, interacting spin models and Brownian systems. My work combines analytical methods from master equations, stochastic processes and large-deviation theory with numerical simulations.
+
+## Research interests
+
+- Stochastic thermodynamics
+- Nonequilibrium statistical mechanics
+- Interacting spin systems
+- Stochastic heat engines
+- Large-deviation theory
+- Brownian dynamics
+- Entropy production
+- Optimal paths and rare events
 :::
 
-
-
-
-## Research themes
-
-::: {.grid}
-
-::: {.card}
-### Stochastic thermodynamics
-
-Heat, work and entropy production at the level of stochastic trajectories.
-:::
-
-::: {.card}
-### Nonequilibrium phase transitions
-
-Collective behavior in interacting systems coupled to multiple reservoirs.
-:::
-
-::: {.card}
-### Large deviations
-
-Rare fluctuations, tilted generators and conditioned stochastic dynamics.
-:::
-
-:::
-
-## Scientific perspective
-
-At microscopic scales, thermodynamic quantities are not simply numbers assigned to macroscopic states. Heat, work and entropy production fluctuate from one trajectory to another.
-
-This is the regime where stochastic thermodynamics becomes essential.

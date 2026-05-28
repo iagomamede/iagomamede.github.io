@@ -51,37 +51,37 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Projects",
+    "title": "Research and projects",
     "section": "",
-    "text": "Microscopic engines operate in a regime where fluctuations are unavoidable. In this project, I investigate how interactions between many microscopic degrees of freedom modify heat currents, power output and efficiency."
+    "text": "My research projects investigate the thermodynamics of small and interacting systems driven far from equilibrium. The central question is how heat, work, entropy production and fluctuations emerge when microscopic degrees of freedom are coupled to thermal reservoirs, external drivings or collective interactions.\nThe methods used across these projects combine stochastic thermodynamics, master equations, Langevin dynamics, interacting many-body models and large-deviation theory. The common objective is to identify general mechanisms behind energy conversion, irreversibility, rare fluctuations and nonequilibrium phase transitions."
   },
   {
     "objectID": "projects.html#collective-stochastic-heat-engines",
     "href": "projects.html#collective-stochastic-heat-engines",
-    "title": "Projects",
-    "section": "",
-    "text": "Microscopic engines operate in a regime where fluctuations are unavoidable. In this project, I investigate how interactions between many microscopic degrees of freedom modify heat currents, power output and efficiency."
+    "title": "Research and projects",
+    "section": "Collective stochastic heat engines",
+    "text": "Collective stochastic heat engines\nMicroscopic heat engines operate in a regime where thermal fluctuations are not perturbations, but constitutive features of the dynamics. In this project, I study stochastic engines composed of interacting units, with the goal of understanding how collective effects modify heat currents, output power, efficiency and entropy production.\nA typical description starts from a Markov jump process over microscopic states \\(i\\), with probabilities \\(p_i(t)\\) evolving according to the master equation\n\\[\n\\dot p_i(t)\n=\n\\sum_j\n\\left[\nw_{ij}p_j(t)\n-\nw_{ji}p_i(t)\n\\right],\n\\]\nwhere \\(w_{ij}\\) is the transition rate from state \\(j\\) to state \\(i\\). The probability current between two states is\n\\[\nJ_{ij}\n=\nw_{ij}p_j\n-\nw_{ji}p_i.\n\\]\nWithin stochastic thermodynamics, heat and work are defined at the level of transitions or trajectories. For an engine coupled to a hot reservoir, the output power and thermodynamic efficiency can be written schematically as\n\\[\nP = -\\dot W,\n\\qquad\n\\eta\n=\n-\\frac{\\dot W}{\\dot Q_h},\n\\]\nwhere \\(\\dot W\\) is the work rate performed on the system and \\(\\dot Q_h\\) is the heat current absorbed from the hot reservoir. The sign convention is chosen so that \\(P&gt;0\\) corresponds to useful work extraction.\nThe main objective is to determine when interactions improve or suppress engine performance. In particular, I investigate how coupling topology, interaction strength and collective phase behavior affect the trade-off between power, efficiency and dissipation."
   },
   {
     "objectID": "projects.html#nonequilibrium-ising-and-potts-systems",
     "href": "projects.html#nonequilibrium-ising-and-potts-systems",
-    "title": "Projects",
+    "title": "Research and projects",
     "section": "Nonequilibrium Ising and Potts systems",
-    "text": "Nonequilibrium Ising and Potts systems\nI use interacting spin models coupled to multiple reservoirs to study phase transitions, stationary distributions and thermodynamic currents far from equilibrium."
+    "text": "Nonequilibrium Ising and Potts systems\nInteracting spin models provide minimal but powerful frameworks to study many-body physics outside equilibrium. In this project, I use Ising, Potts and related models coupled to multiple thermal reservoirs to analyze nonequilibrium phase transitions, stationary distributions and thermodynamic currents.\nFor an Ising-like system, the microscopic configuration is denoted by \\(\\sigma = (\\sigma_1,\\ldots,\\sigma_N)\\), with \\(\\sigma_i=\\pm 1\\). A standard equilibrium Hamiltonian has the form\n\\[\nE(\\sigma)\n=\n-\\frac{J}{2N}\n\\sum_{i,j}\n\\sigma_i\\sigma_j\n-\nh\n\\sum_i\n\\sigma_i,\n\\]\nwhere \\(J\\) is the interaction strength and \\(h\\) is an external field. Nonequilibrium conditions arise when different transitions are coupled to different reservoirs or drivings, so that detailed balance is generally broken.\nThe entropy production rate quantifies this breaking of time-reversal symmetry. For a stationary Markov process, it can be expressed as\n\\[\n\\dot\\Sigma\n=\n\\sum_{i&lt;j}\nJ_{ij}\n\\ln\n\\frac{w_{ij}p_j}{w_{ji}p_i},\n\\]\nwhere \\(J_{ij}\\) is the stationary probability current and \\(p_i\\) is the stationary probability of state \\(i\\). A nonzero \\(\\dot\\Sigma\\) signals irreversible currents maintained by the reservoirs.\nThe project aims to understand how equilibrium notions such as criticality, order parameters and phase coexistence are modified by nonequilibrium constraints. Particular attention is given to whether phase boundaries can be mapped onto effective equilibrium descriptions, and to how entropy production behaves near continuous, discontinuous and tricritical transitions."
   },
   {
     "objectID": "projects.html#large-deviations-of-heat-fluctuations",
     "href": "projects.html#large-deviations-of-heat-fluctuations",
-    "title": "Projects",
+    "title": "Research and projects",
     "section": "Large deviations of heat fluctuations",
-    "text": "Large deviations of heat fluctuations\nI study rare heat fluctuations using variational methods, stochastic calculus and large-deviation theory."
+    "text": "Large deviations of heat fluctuations\nFluctuations of heat, work and currents become especially relevant in microscopic systems, where atypical trajectories may dominate rare but physically important events. In this project, I study rare heat fluctuations using large-deviation theory, stochastic calculus and variational methods.\nIf \\(A_t\\) is a time-integrated observable, such as the heat exchanged with a reservoir over time \\(t\\), large-deviation theory describes the probability of observing atypical values of \\(A_t/t\\). The central statement is the large-deviation principle\n\\[\n\\mathbb{P}\n\\left(\n\\frac{A_t}{t}\n\\approx\na\n\\right)\n\\asymp\ne^{-t I(a)},\n\\]\nwhere \\(I(a)\\) is the rate function. This function plays a role analogous to a nonequilibrium free energy: it quantifies how unlikely a fluctuation \\(a\\) is in the long-time limit.\nAn equivalent characterization is often obtained through the scaled cumulant generating function\n\\[\n\\lambda(s)\n=\n\\lim_{t\\to\\infty}\n\\frac{1}{t}\n\\ln\n\\left\\langle\ne^{sA_t}\n\\right\\rangle.\n\\]\nWhen the appropriate convexity conditions hold, the rate function is obtained through a Legendre-Fenchel transform,\n\\[\nI(a)\n=\n\\sup_s\n\\left[\nsa\n-\n\\lambda(s)\n\\right].\n\\]\nThe objective of this project is to connect rare-event statistics with thermodynamic structure. This includes studying how heat fluctuations depend on boundary conditions, stopping times, conditioning protocols and the underlying geometry of the stochastic dynamics."
   },
   {
     "objectID": "projects.html#brownian-machines-under-nonlinear-driving",
     "href": "projects.html#brownian-machines-under-nonlinear-driving",
-    "title": "Projects",
+    "title": "Research and projects",
     "section": "Brownian machines under nonlinear driving",
-    "text": "Brownian machines under nonlinear driving\nI model Brownian particles driven by nonlinear time-dependent forces to understand power, heat and irreversibility."
+    "text": "Brownian machines under nonlinear driving\nBrownian machines are stochastic systems in which continuous degrees of freedom are driven by external forces, time-dependent protocols or thermal gradients. They provide a natural setting to investigate the emergence of work, heat and irreversibility in systems described by Langevin dynamics.\nFor an overdamped Brownian particle, the dynamics can be written as\n\\[\n\\dot x\n=\n\\mu F(x,t)\n+\n\\sqrt{2D}\\,\\xi(t),\n\\]\nwhere \\(\\mu\\) is the mobility, \\(F(x,t)\\) is a possibly nonlinear and time-dependent force, \\(D\\) is the diffusion coefficient and \\(\\xi(t)\\) is Gaussian white noise satisfying\n\\[\n\\langle \\xi(t) \\rangle = 0,\n\\qquad\n\\langle \\xi(t)\\xi(t') \\rangle = \\delta(t-t').\n\\]\nThe corresponding probability density \\(\\rho(x,t)\\) evolves according to the Fokker-Planck equation\n\\[\n\\partial_t \\rho\n=\n-\\partial_x\n\\left[\n\\mu F(x,t)\\rho\n\\right]\n+\nD\\partial_x^2\\rho.\n\\]\nIn this framework, thermodynamic quantities are functionals of stochastic trajectories. The work performed by an externally controlled potential \\(U(x,\\lambda_t)\\), for example, is commonly written as\n\\[\nW\n=\n\\int_0^\\tau\n\\dot\\lambda_t\n\\,\n\\partial_\\lambda U(x_t,\\lambda_t)\n\\,\ndt.\n\\]\nThe main goal is to understand how nonlinear driving protocols and velocity-dependent or state-dependent forces influence power generation, heat dissipation and efficiency. These models are particularly useful for connecting stochastic thermodynamics with experimentally relevant systems such as colloidal particles, molecular motors and mesoscopic heat engines."
   },
   {
     "objectID": "research.html",
@@ -137,28 +137,21 @@
     "href": "index.html",
     "title": "Iago Mamede",
     "section": "",
-    "text": "I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations. My research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium."
+    "text": "I am a PhD student in Physics at the Universidade de São Paulo (Brazil), conducting part of my doctoral research at Hasselt University (Belgium) through the BOF-BILA program.\nMy research lies at the interface of stochastic thermodynamics, nonequilibrium statistical physics and statistical mechanics of interacting systems. I study how microscopic systems exchange heat, perform work and produce entropy when thermal fluctuations, collective effects and rare events play a central role.\nI am particularly interested in stochastic heat engines, nonequilibrium phase transitions, interacting spin models and Brownian systems. My work combines analytical methods from master equations, stochastic processes and large-deviation theory with numerical simulations.\n\n\n\n\nStochastic thermodynamics\nNonequilibrium statistical mechanics\nInteracting spin systems\nStochastic heat engines\nLarge-deviation theory\nBrownian dynamics\nEntropy production\nOptimal paths and rare events"
   },
   {
-    "objectID": "index.html#stochastic-thermodynamics",
-    "href": "index.html#stochastic-thermodynamics",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
     "title": "Iago Mamede",
     "section": "",
-    "text": "I study how microscopic systems exchange heat, perform work and produce entropy under the influence of fluctuations. My research combines stochastic thermodynamics, interacting spin models, Brownian dynamics and large-deviation theory to understand energy conversion, irreversibility and collective behavior far from equilibrium."
+    "text": "I am a PhD student in Physics at the Universidade de São Paulo (Brazil), conducting part of my doctoral research at Hasselt University (Belgium) through the BOF-BILA program.\nMy research lies at the interface of stochastic thermodynamics, nonequilibrium statistical physics and statistical mechanics of interacting systems. I study how microscopic systems exchange heat, perform work and produce entropy when thermal fluctuations, collective effects and rare events play a central role.\nI am particularly interested in stochastic heat engines, nonequilibrium phase transitions, interacting spin models and Brownian systems. My work combines analytical methods from master equations, stochastic processes and large-deviation theory with numerical simulations."
   },
   {
-    "objectID": "index.html#research-themes",
-    "href": "index.html#research-themes",
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
     "title": "Iago Mamede",
-    "section": "Research themes",
-    "text": "Research themes\n\n\nStochastic thermodynamics\nHeat, work and entropy production at the level of stochastic trajectories.\n\n\nNonequilibrium phase transitions\nCollective behavior in interacting systems coupled to multiple reservoirs.\n\n\nLarge deviations\nRare fluctuations, tilted generators and conditioned stochastic dynamics."
-  },
-  {
-    "objectID": "index.html#scientific-perspective",
-    "href": "index.html#scientific-perspective",
-    "title": "Iago Mamede",
-    "section": "Scientific perspective",
-    "text": "Scientific perspective\nAt microscopic scales, thermodynamic quantities are not simply numbers assigned to macroscopic states. Heat, work and entropy production fluctuate from one trajectory to another.\nThis is the regime where stochastic thermodynamics becomes essential."
+    "section": "",
+    "text": "Stochastic thermodynamics\nNonequilibrium statistical mechanics\nInteracting spin systems\nStochastic heat engines\nLarge-deviation theory\nBrownian dynamics\nEntropy production\nOptimal paths and rare events"
   },
   {
     "objectID": "about.html",

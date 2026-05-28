@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects</title>
+<title>Research and projects</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -92,20 +121,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+<span class="menu-text">Research and projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./notes.html"> 
 <span class="menu-text">Notes</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
@@ -147,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Research and projects</h1>
 </div>
 
 
@@ -164,21 +185,148 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>My research projects investigate the thermodynamics of small and interacting systems driven far from equilibrium. The central question is how heat, work, entropy production and fluctuations emerge when microscopic degrees of freedom are coupled to thermal reservoirs, external drivings or collective interactions.</p>
+<p>The methods used across these projects combine stochastic thermodynamics, master equations, Langevin dynamics, interacting many-body models and large-deviation theory. The common objective is to identify general mechanisms behind energy conversion, irreversibility, rare fluctuations and nonequilibrium phase transitions.</p>
 <section id="collective-stochastic-heat-engines" class="level2">
 <h2 class="anchored" data-anchor-id="collective-stochastic-heat-engines">Collective stochastic heat engines</h2>
-<p>Microscopic engines operate in a regime where fluctuations are unavoidable. In this project, I investigate how interactions between many microscopic degrees of freedom modify heat currents, power output and efficiency.</p>
+<p>Microscopic heat engines operate in a regime where thermal fluctuations are not perturbations, but constitutive features of the dynamics. In this project, I study stochastic engines composed of interacting units, with the goal of understanding how collective effects modify heat currents, output power, efficiency and entropy production.</p>
+<p>A typical description starts from a Markov jump process over microscopic states <span class="math inline">\(i\)</span>, with probabilities <span class="math inline">\(p_i(t)\)</span> evolving according to the master equation</p>
+<p><span class="math display">\[
+\dot p_i(t)
+=
+\sum_j
+\left[
+w_{ij}p_j(t)
+-
+w_{ji}p_i(t)
+\right],
+\]</span></p>
+<p>where <span class="math inline">\(w_{ij}\)</span> is the transition rate from state <span class="math inline">\(j\)</span> to state <span class="math inline">\(i\)</span>. The probability current between two states is</p>
+<p><span class="math display">\[
+J_{ij}
+=
+w_{ij}p_j
+-
+w_{ji}p_i.
+\]</span></p>
+<p>Within stochastic thermodynamics, heat and work are defined at the level of transitions or trajectories. For an engine coupled to a hot reservoir, the output power and thermodynamic efficiency can be written schematically as</p>
+<p><span class="math display">\[
+P = -\dot W,
+\qquad
+\eta
+=
+-\frac{\dot W}{\dot Q_h},
+\]</span></p>
+<p>where <span class="math inline">\(\dot W\)</span> is the work rate performed on the system and <span class="math inline">\(\dot Q_h\)</span> is the heat current absorbed from the hot reservoir. The sign convention is chosen so that <span class="math inline">\(P&gt;0\)</span> corresponds to useful work extraction.</p>
+<p>The main objective is to determine when interactions improve or suppress engine performance. In particular, I investigate how coupling topology, interaction strength and collective phase behavior affect the trade-off between power, efficiency and dissipation.</p>
 </section>
 <section id="nonequilibrium-ising-and-potts-systems" class="level2">
 <h2 class="anchored" data-anchor-id="nonequilibrium-ising-and-potts-systems">Nonequilibrium Ising and Potts systems</h2>
-<p>I use interacting spin models coupled to multiple reservoirs to study phase transitions, stationary distributions and thermodynamic currents far from equilibrium.</p>
+<p>Interacting spin models provide minimal but powerful frameworks to study many-body physics outside equilibrium. In this project, I use Ising, Potts and related models coupled to multiple thermal reservoirs to analyze nonequilibrium phase transitions, stationary distributions and thermodynamic currents.</p>
+<p>For an Ising-like system, the microscopic configuration is denoted by <span class="math inline">\(\sigma = (\sigma_1,\ldots,\sigma_N)\)</span>, with <span class="math inline">\(\sigma_i=\pm 1\)</span>. A standard equilibrium Hamiltonian has the form</p>
+<p><span class="math display">\[
+E(\sigma)
+=
+-\frac{J}{2N}
+\sum_{i,j}
+\sigma_i\sigma_j
+-
+h
+\sum_i
+\sigma_i,
+\]</span></p>
+<p>where <span class="math inline">\(J\)</span> is the interaction strength and <span class="math inline">\(h\)</span> is an external field. Nonequilibrium conditions arise when different transitions are coupled to different reservoirs or drivings, so that detailed balance is generally broken.</p>
+<p>The entropy production rate quantifies this breaking of time-reversal symmetry. For a stationary Markov process, it can be expressed as</p>
+<p><span class="math display">\[
+\dot\Sigma
+=
+\sum_{i&lt;j}
+J_{ij}
+\ln
+\frac{w_{ij}p_j}{w_{ji}p_i},
+\]</span></p>
+<p>where <span class="math inline">\(J_{ij}\)</span> is the stationary probability current and <span class="math inline">\(p_i\)</span> is the stationary probability of state <span class="math inline">\(i\)</span>. A nonzero <span class="math inline">\(\dot\Sigma\)</span> signals irreversible currents maintained by the reservoirs.</p>
+<p>The project aims to understand how equilibrium notions such as criticality, order parameters and phase coexistence are modified by nonequilibrium constraints. Particular attention is given to whether phase boundaries can be mapped onto effective equilibrium descriptions, and to how entropy production behaves near continuous, discontinuous and tricritical transitions.</p>
 </section>
 <section id="large-deviations-of-heat-fluctuations" class="level2">
 <h2 class="anchored" data-anchor-id="large-deviations-of-heat-fluctuations">Large deviations of heat fluctuations</h2>
-<p>I study rare heat fluctuations using variational methods, stochastic calculus and large-deviation theory.</p>
+<p>Fluctuations of heat, work and currents become especially relevant in microscopic systems, where atypical trajectories may dominate rare but physically important events. In this project, I study rare heat fluctuations using large-deviation theory, stochastic calculus and variational methods.</p>
+<p>If <span class="math inline">\(A_t\)</span> is a time-integrated observable, such as the heat exchanged with a reservoir over time <span class="math inline">\(t\)</span>, large-deviation theory describes the probability of observing atypical values of <span class="math inline">\(A_t/t\)</span>. The central statement is the large-deviation principle</p>
+<p><span class="math display">\[
+\mathbb{P}
+\left(
+\frac{A_t}{t}
+\approx
+a
+\right)
+\asymp
+e^{-t I(a)},
+\]</span></p>
+<p>where <span class="math inline">\(I(a)\)</span> is the rate function. This function plays a role analogous to a nonequilibrium free energy: it quantifies how unlikely a fluctuation <span class="math inline">\(a\)</span> is in the long-time limit.</p>
+<p>An equivalent characterization is often obtained through the scaled cumulant generating function</p>
+<p><span class="math display">\[
+\lambda(s)
+=
+\lim_{t\to\infty}
+\frac{1}{t}
+\ln
+\left\langle
+e^{sA_t}
+\right\rangle.
+\]</span></p>
+<p>When the appropriate convexity conditions hold, the rate function is obtained through a Legendre-Fenchel transform,</p>
+<p><span class="math display">\[
+I(a)
+=
+\sup_s
+\left[
+sa
+-
+\lambda(s)
+\right].
+\]</span></p>
+<p>The objective of this project is to connect rare-event statistics with thermodynamic structure. This includes studying how heat fluctuations depend on boundary conditions, stopping times, conditioning protocols and the underlying geometry of the stochastic dynamics.</p>
 </section>
 <section id="brownian-machines-under-nonlinear-driving" class="level2">
 <h2 class="anchored" data-anchor-id="brownian-machines-under-nonlinear-driving">Brownian machines under nonlinear driving</h2>
-<p>I model Brownian particles driven by nonlinear time-dependent forces to understand power, heat and irreversibility.</p>
+<p>Brownian machines are stochastic systems in which continuous degrees of freedom are driven by external forces, time-dependent protocols or thermal gradients. They provide a natural setting to investigate the emergence of work, heat and irreversibility in systems described by Langevin dynamics.</p>
+<p>For an overdamped Brownian particle, the dynamics can be written as</p>
+<p><span class="math display">\[
+\dot x
+=
+\mu F(x,t)
++
+\sqrt{2D}\,\xi(t),
+\]</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the mobility, <span class="math inline">\(F(x,t)\)</span> is a possibly nonlinear and time-dependent force, <span class="math inline">\(D\)</span> is the diffusion coefficient and <span class="math inline">\(\xi(t)\)</span> is Gaussian white noise satisfying</p>
+<p><span class="math display">\[
+\langle \xi(t) \rangle = 0,
+\qquad
+\langle \xi(t)\xi(t') \rangle = \delta(t-t').
+\]</span></p>
+<p>The corresponding probability density <span class="math inline">\(\rho(x,t)\)</span> evolves according to the Fokker-Planck equation</p>
+<p><span class="math display">\[
+\partial_t \rho
+=
+-\partial_x
+\left[
+\mu F(x,t)\rho
+\right]
++
+D\partial_x^2\rho.
+\]</span></p>
+<p>In this framework, thermodynamic quantities are functionals of stochastic trajectories. The work performed by an externally controlled potential <span class="math inline">\(U(x,\lambda_t)\)</span>, for example, is commonly written as</p>
+<p><span class="math display">\[
+W
+=
+\int_0^\tau
+\dot\lambda_t
+\,
+\partial_\lambda U(x_t,\lambda_t)
+\,
+dt.
+\]</span></p>
+<p>The main goal is to understand how nonlinear driving protocols and velocity-dependent or state-dependent forces influence power generation, heat dissipation and efficiency. These models are particularly useful for connecting stochastic thermodynamics with experimentally relevant systems such as colloidal particles, molecular motors and mesoscopic heat engines.</p>
 
 
 </section>

@@ -1,21 +1,180 @@
 ---
-title: "Projects"
+title: "Research and projects"
 ---
 
+My research projects investigate the thermodynamics of small and interacting systems driven far from equilibrium. The central question is how heat, work, entropy production and fluctuations emerge when microscopic degrees of freedom are coupled to thermal reservoirs, external drivings or collective interactions.
 
+The methods used across these projects combine stochastic thermodynamics, master equations, Langevin dynamics, interacting many-body models and large-deviation theory. The common objective is to identify general mechanisms behind energy conversion, irreversibility, rare fluctuations and nonequilibrium phase transitions.
 
 ## Collective stochastic heat engines
 
-Microscopic engines operate in a regime where fluctuations are unavoidable. In this project, I investigate how interactions between many microscopic degrees of freedom modify heat currents, power output and efficiency.
+Microscopic heat engines operate in a regime where thermal fluctuations are not perturbations, but constitutive features of the dynamics. In this project, I study stochastic engines composed of interacting units, with the goal of understanding how collective effects modify heat currents, output power, efficiency and entropy production.
+
+A typical description starts from a Markov jump process over microscopic states $i$, with probabilities $p_i(t)$ evolving according to the master equation
+
+$$
+\dot p_i(t)
+=
+\sum_j
+\left[
+w_{ij}p_j(t)
+-
+w_{ji}p_i(t)
+\right],
+$$
+
+where $w_{ij}$ is the transition rate from state $j$ to state $i$. The probability current between two states is
+
+$$
+J_{ij}
+=
+w_{ij}p_j
+-
+w_{ji}p_i.
+$$
+
+Within stochastic thermodynamics, heat and work are defined at the level of transitions or trajectories. For an engine coupled to a hot reservoir, the output power and thermodynamic efficiency can be written schematically as
+
+$$
+P = -\dot W,
+\qquad
+\eta
+=
+-\frac{\dot W}{\dot Q_h},
+$$
+
+where $\dot W$ is the work rate performed on the system and $\dot Q_h$ is the heat current absorbed from the hot reservoir. The sign convention is chosen so that $P>0$ corresponds to useful work extraction.
+
+The main objective is to determine when interactions improve or suppress engine performance. In particular, I investigate how coupling topology, interaction strength and collective phase behavior affect the trade-off between power, efficiency and dissipation.
 
 ## Nonequilibrium Ising and Potts systems
 
-I use interacting spin models coupled to multiple reservoirs to study phase transitions, stationary distributions and thermodynamic currents far from equilibrium.
+Interacting spin models provide minimal but powerful frameworks to study many-body physics outside equilibrium. In this project, I use Ising, Potts and related models coupled to multiple thermal reservoirs to analyze nonequilibrium phase transitions, stationary distributions and thermodynamic currents.
+
+For an Ising-like system, the microscopic configuration is denoted by $\sigma = (\sigma_1,\ldots,\sigma_N)$, with $\sigma_i=\pm 1$. A standard equilibrium Hamiltonian has the form
+
+$$
+E(\sigma)
+=
+-\frac{J}{2N}
+\sum_{i,j}
+\sigma_i\sigma_j
+-
+h
+\sum_i
+\sigma_i,
+$$
+
+where $J$ is the interaction strength and $h$ is an external field. Nonequilibrium conditions arise when different transitions are coupled to different reservoirs or drivings, so that detailed balance is generally broken.
+
+The entropy production rate quantifies this breaking of time-reversal symmetry. For a stationary Markov process, it can be expressed as
+
+$$
+\dot\Sigma
+=
+\sum_{i<j}
+J_{ij}
+\ln
+\frac{w_{ij}p_j}{w_{ji}p_i},
+$$
+
+where $J_{ij}$ is the stationary probability current and $p_i$ is the stationary probability of state $i$. A nonzero $\dot\Sigma$ signals irreversible currents maintained by the reservoirs.
+
+The project aims to understand how equilibrium notions such as criticality, order parameters and phase coexistence are modified by nonequilibrium constraints. Particular attention is given to whether phase boundaries can be mapped onto effective equilibrium descriptions, and to how entropy production behaves near continuous, discontinuous and tricritical transitions.
 
 ## Large deviations of heat fluctuations
 
-I study rare heat fluctuations using variational methods, stochastic calculus and large-deviation theory.
+Fluctuations of heat, work and currents become especially relevant in microscopic systems, where atypical trajectories may dominate rare but physically important events. In this project, I study rare heat fluctuations using large-deviation theory, stochastic calculus and variational methods.
+
+If $A_t$ is a time-integrated observable, such as the heat exchanged with a reservoir over time $t$, large-deviation theory describes the probability of observing atypical values of $A_t/t$. The central statement is the large-deviation principle
+
+$$
+\mathbb{P}
+\left(
+\frac{A_t}{t}
+\approx
+a
+\right)
+\asymp
+e^{-t I(a)},
+$$
+
+where $I(a)$ is the rate function. This function plays a role analogous to a nonequilibrium free energy: it quantifies how unlikely a fluctuation $a$ is in the long-time limit.
+
+An equivalent characterization is often obtained through the scaled cumulant generating function
+
+$$
+\lambda(s)
+=
+\lim_{t\to\infty}
+\frac{1}{t}
+\ln
+\left\langle
+e^{sA_t}
+\right\rangle.
+$$
+
+When the appropriate convexity conditions hold, the rate function is obtained through a Legendre-Fenchel transform,
+
+$$
+I(a)
+=
+\sup_s
+\left[
+sa
+-
+\lambda(s)
+\right].
+$$
+
+The objective of this project is to connect rare-event statistics with thermodynamic structure. This includes studying how heat fluctuations depend on boundary conditions, stopping times, conditioning protocols and the underlying geometry of the stochastic dynamics.
 
 ## Brownian machines under nonlinear driving
 
-I model Brownian particles driven by nonlinear time-dependent forces to understand power, heat and irreversibility.
+Brownian machines are stochastic systems in which continuous degrees of freedom are driven by external forces, time-dependent protocols or thermal gradients. They provide a natural setting to investigate the emergence of work, heat and irreversibility in systems described by Langevin dynamics.
+
+For an overdamped Brownian particle, the dynamics can be written as
+
+$$
+\dot x
+=
+\mu F(x,t)
++
+\sqrt{2D}\,\xi(t),
+$$
+
+where $\mu$ is the mobility, $F(x,t)$ is a possibly nonlinear and time-dependent force, $D$ is the diffusion coefficient and $\xi(t)$ is Gaussian white noise satisfying
+
+$$
+\langle \xi(t) \rangle = 0,
+\qquad
+\langle \xi(t)\xi(t') \rangle = \delta(t-t').
+$$
+
+The corresponding probability density $\rho(x,t)$ evolves according to the Fokker-Planck equation
+
+$$
+\partial_t \rho
+=
+-\partial_x
+\left[
+\mu F(x,t)\rho
+\right]
++
+D\partial_x^2\rho.
+$$
+
+In this framework, thermodynamic quantities are functionals of stochastic trajectories. The work performed by an externally controlled potential $U(x,\lambda_t)$, for example, is commonly written as
+
+$$
+W
+=
+\int_0^\tau
+\dot\lambda_t
+\,
+\partial_\lambda U(x_t,\lambda_t)
+\,
+dt.
+$$
+
+The main goal is to understand how nonlinear driving protocols and velocity-dependent or state-dependent forces influence power generation, heat dissipation and efficiency. These models are particularly useful for connecting stochastic thermodynamics with experimentally relevant systems such as colloidal particles, molecular motors and mesoscopic heat engines.
