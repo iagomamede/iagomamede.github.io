@@ -16,7 +16,7 @@
 
   --accent-cold: #75d898;
   --accent-cold-soft: #b8ee7f;
-  --accent-hot: #ff6f63;
+  --accent-hot: rgb(255, 111, 99);
   --accent-hot-soft: #ffa45f;
 
   --border-soft: rgba(177, 204, 202, 0.12);
