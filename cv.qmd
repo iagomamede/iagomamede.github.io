@@ -4,27 +4,8 @@ title: "CV"
 
 
 
-You can download my full CV here:
+You can view and download my full CV here:
 
-[Download CV](assets/cv/Iago_Mamede_CV.pdf)
+[Download CV English](assets/cv/Iago_CV_EN.pdf){.btn}
+[Download CV Portuguese](assets/cv/Iago_CV_PT.pdf){.btn}
 
-## Education
-
-- PhD in Physics, institution, year-present.
-- MSc in Physics, institution, year.
-
-## Research experience
-
-- Stochastic thermodynamics
-- Nonequilibrium statistical physics
-- Interacting spin systems
-- Large-deviation theory
-
-## Skills
-
-- Mathematica
-- Python
-- LaTeX
-- Stochastic simulations
-- Master equations
-- Fokker-Planck theory
