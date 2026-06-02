@@ -9,10 +9,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Research and projects"
+      - text: "Research and Physics"
         href: projects.qmd
-      - text: "Notes"
-        href: notes.qmd
       - text: "Publications"
         href: publications.qmd
       - text: "CV"
