@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -184,41 +155,7 @@ window.Quarto = {
 <p>My research is centered on stochastic thermodynamics: the theory of heat, work and entropy production in systems where thermal fluctuations are not negligible.</p>
 <section id="stochastic-thermodynamics" class="level2">
 <h2 class="anchored" data-anchor-id="stochastic-thermodynamics">Stochastic thermodynamics</h2>
-<p>I study thermodynamic quantities at the trajectory level. In this framework, heat, work and entropy production are fluctuating observables accumulated along individual realizations of a stochastic process.</p>
-<p>For a Markov jump process, the entropy production rate can be written as</p>
-<p><span class="math display">\[
-\dot{\Sigma}
-=
-\sum_{i&lt;j}
-J_{ij}
-\ln
-\frac{w_{ij}p_j}{w_{ji}p_i},
-\]</span></p>
-<p>where <span class="math inline">\(J_{ij}\)</span> is the probability current between states (i) and (j).</p>
-</section>
-<section id="nonequilibrium-spin-systems" class="level2">
-<h2 class="anchored" data-anchor-id="nonequilibrium-spin-systems">Nonequilibrium spin systems</h2>
-<p>A major part of my work concerns interacting spin systems coupled to multiple thermal reservoirs. These models provide minimal platforms to study how collective effects, phase transitions and thermodynamic performance emerge in nonequilibrium heat engines.</p>
-</section>
-<section id="large-deviations-and-rare-events" class="level2">
-<h2 class="anchored" data-anchor-id="large-deviations-and-rare-events">Large deviations and rare events</h2>
-<p>Rare fluctuations often dominate the behavior of nonequilibrium systems. I use large-deviation theory to characterize atypical heat, work and current fluctuations.</p>
-<p>The central object is often the scaled cumulant generating function,</p>
-<p><span class="math display">\[
-\lambda(s)
-=
-\lim_{t\to\infty}
-\frac{1}{t}
-\ln
-\left\langle
-e^{s A_t}
-\right\rangle,
-\]</span></p>
-<p>where <span class="math inline">\(A_t\)</span> is a time-integrated observable.</p>
-</section>
-<section id="brownian-systems-and-nonlinear-driving" class="level2">
-<h2 class="anchored" data-anchor-id="brownian-systems-and-nonlinear-driving">Brownian systems and nonlinear driving</h2>
-<p>I also investigate Brownian systems under nonlinear forces and time-dependent protocols, focusing on heat flows, power output and entropy production.</p>
+<p>Coming Soon</p>
 
 
 </section>
