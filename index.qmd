@@ -1,16 +1,32 @@
 ---
-title: "Iago Mamede"
+title: ""
+pagetitle: "Iago Mamede"
 ---
 
-::: {.hero}
-## About me
+::: {.home-hero}
+::: {.home-photo}
+![](assets/img/home-stochastic-thermodynamics.png){fig-alt="Diagrammatic scientific schematic of stochastic thermodynamics with Brownian trajectories and hot and cold reservoirs"}
+:::
+
+::: {.home-hero-content}
+<div class="home-name-lockup">
+  <div class="home-main-name">Iago Mamede</div>
+</div>
+
+::: {.home-intro}
+::: {.intro-copy}
+<div class="intro-kicker">Physics · Stochastic thermodynamics</div>
+
+## Nonequilibrium statistical physics, rare events and microscopic heat engines
 
 I am a PhD student in Physics at the Universidade de São Paulo (Brazil), conducting part of my doctoral research at Hasselt University (Belgium) through the BOF-BILA program.
 
 My research lies at the interface of stochastic thermodynamics, nonequilibrium statistical physics and statistical mechanics of interacting systems. I study how microscopic systems exchange heat, perform work and produce entropy when thermal fluctuations, collective effects and rare events play a central role.
 
 I am particularly interested in stochastic heat engines, nonequilibrium phase transitions, interacting spin models and Brownian systems. My work combines analytical methods from master equations, stochastic processes and large-deviation theory with numerical simulations.
+:::
 
+::: {.research-panel}
 ## Research interests
 
 - Stochastic thermodynamics
@@ -22,4 +38,7 @@ I am particularly interested in stochastic heat engines, nonequilibrium phase tr
 - Entropy production
 - Optimal paths and rare events
 :::
+:::
 
+:::
+:::

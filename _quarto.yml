@@ -3,13 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: ""
+  title: "Iago Mamede"
   navbar:
-    title: ""
+    title: "Iago Mamede"
+    logo: assets/img/stochastic-icon.png
+    logo-alt: "Stochastic thermodynamics icon"
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Research and Physics"
+      - text: "Research"
         href: projects.qmd
       - text: "Publications"
         href: publications.qmd
@@ -23,8 +25,9 @@ website:
       - text: "Google Scholar"
         href: "https://scholar.google.com/citations?user=IzlSrFEAAAAJ&hl=en"
 
-  # page-footer:
-  #   left: "Iago Mamede"
+  page-footer:
+    left: "Iago Mamede"
+    right: "Stochastic thermodynamics and nonequilibrium statistical physics"
 
 format:
   html:
