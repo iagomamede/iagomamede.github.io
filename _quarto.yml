@@ -11,7 +11,7 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Research"
+      - text: "Physics"
         href: research.qmd
       - text: "Publications"
         href: publications.qmd
