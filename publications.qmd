@@ -79,7 +79,7 @@ Iago N Mamede, Prashant Singh, Arnab Pal, C.E. Fiore and Karel Proesmans
 
 New Journal of Physics, Volume 26, March 2024
 
-[DOI](10.1088/1367-2630/ad313d) | [arXiv](https://arxiv.org/pdf/2308.02255) 
+[DOI](10.1088/1367-2630/ad313d) | [arXiv](https://arxiv.org/abs/2401.12583) 
 
 
 :::
